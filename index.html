@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Interactive Members List</title>
+    <link rel="stylesheet" href="interactive.css">
+</head>
+
+<body>
+    <h1 id="pageTitle">Interactive Members List</h1>
+    <form id="memberForm" novalidate>
+        <label for="memberName">Name</label>
+        <input id="memberName" type="text" maxlength="30" placeholder="Enter member name" autocomplete="off">
+        <small id="nameCounter" class="hint">0 / 30</small>
+        <label for="memberTeam">Team</label>
+        <input id="memberTeam" type="text" maxlength="20" placeholder="Enter team name" autocomplete="off">
+        <button type="submit">Add Member</button>
+    </form>
+    <p id="livePreview" class="hint"></p>
+    <p id="message" aria-live="polite"></p>
+    <label for="searchInput">Search members</label>
+    <input id="searchInput" type="search" placeholder="Type a name...">
+    <p id="memberCount"></p>
+    <ul id="membersList"></ul>
+    <p id="emptyState" class="hint" hidden></p>
+    <button id="clearAllButton" type="button">Clear All Members</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
