@@ -27,7 +27,7 @@
 
  :root[data-theme="dark"] {
      color-scheme: dark;
-     --bg: #16181d;
+     --bg: #2f3648;
      --text: #ececec;
      --hint: #a0a4ab;
      --error: #ff8a9b;
